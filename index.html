@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Gabriel">
+    <meta name="description" content="Cafeteria Triple Expresso">
+    <meta name="keywords" content="Programação, Café">
+    <title>Cafeteria Triple Expresso</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <nav class="nav">
+                <img class="nav__logo" src="./images/logo_coffeeshop_dark.svg" alt="Logotipo Cafeteria Triple Expresso">
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#recipes">Receitas</a></li>
+                    <li><a class="nav__link" href="#reservation">Reservar uma mesa</a></li>
+                    <li><a class="nav__link" href="#contacts">Contatos</a></li>
+                </ul>
+            </nav>
+            <h1 class="header__title"><span class="header__span-accent">Café especial</span> na biblioteca Triple Peaks</h1>
+            <p class="header__description">Esta é nossa zona de estudo! Temos aquele cafezinho para energizar você e vibrações aconchegantes para soltar a criatividade.</p>
+            <img class="header__image" src="./images/inside_coffee_shop.png" alt="Ilustração da cafeteria">
+            <div class="header__footer">
+                <p class="header__paragraph">Horários:</p>
+                <p class="header__paragraph">Segunda a sexta (10:00 - 19:00)</p>
+                <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
+                <p class="header__paragraph">200 Success Avenue, Triple Peaks</p>
+            </div>
+        </header>
+        <main class="content">
+            <section id="recipes" class="recipes">
+                <h2 class="recipes__title">Receitas</h2>
+                <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
+                <ul class="recipes__videos">
+                    <li class="recipes__video-item">
+                        <iframe class="recipes__iframe" src="https://www.youtube.com/embed/j6VlT_jUVPc" width="480" height="273" title="Vídeo: Receita Aeropress" allowfullscreen></iframe>
+                        <p class="recipes__video-caption">Receita Aeropress <span class="recipes__span-accent">5 min</span></p>
+                    </li>
+                    <li class="recipes__video-item">
+                        <iframe class="recipes__iframe" src="https://www.youtube.com/embed/st571DYYTR8" width="480" height="273" title="Vídeo: Receita de Prensa Francesa" allowfullscreen></iframe>
+                        <p class="recipes__video-caption">Receita de Prensa Francesa <span class="recipes__span-accent">15 min</span></p>
+                    </li>
+                </ul>
+            </section>
+            <section id="reservation" class="reservation">
+                <h2 class="reservation__title">Reservar uma mesa</h2>
+                <form class="reservation__form">
+                    <fieldset class="form__fieldset">
+                        <label class="form__label" for="nome">Nome</label>
+                        <input class="form__input" id="nome" type="text" required placeholder="Insira o seu nome">
+                        <label class="form__label" for="convidados">Número de convidados</label>
+                        <input class="form__input" id="convidados" type="number" min="1" max="8" required placeholder="1-8">
+                        <label class="form__label" for="data">Data</label>
+                        <input class="form__input" id="data" type="date" required>
+                        <label class="form__label" for="email">E-mail</label>
+                        <input class="form__input" id="email" type="email" required placeholder="Insira o seu e-mail">
+                    </fieldset>
+                    <button class="form__button" type="submit">Reservar uma mesa</button>
+                    <label class="form__label form__label-checkbox" for="termos"><input class="form__checkbox" id="termos" type="checkbox">Eu concordo com os termos de uso</label>
+                </form>
+            </section>
+            <section id="contacts" class="contacts"></section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
